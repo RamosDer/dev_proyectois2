@@ -1,5 +1,5 @@
 # Usar una imagen base de Python
-FROM python:3.8-slim
+FROM python:3.8.10-slim
 
 # Establecer el directorio de trabajo en /app
 WORKDIR /app
@@ -10,11 +10,11 @@ COPY requirements.txt .
 # Instalar las dependencias del proyecto
 RUN pip install -r requirements.txt
 
-# Copiar el resto de los archivos de la aplicación al contenedor
-COPY dev_proyectois2/ /app/
-COPY db.sqlite3 /app/
-COPY manage.py /app/
-COPY README.md /app/
+# Copiar todo el proyecto al directorio de trabajo en el contenedor
+COPY . .
+
+# Confifurar la variable de entorno de Django para que apunte a la configuración del proyecto
+ENV DJANGO_SETTINGS_MODULE=cms.settings
 
 # Expone el puerto en el que se ejecuta la aplicación (por ejemplo, 8000)
 EXPOSE 8000

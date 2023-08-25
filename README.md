@@ -27,4 +27,6 @@ sudo apt update
 
 # Construir una imagen de Docker
     docker build -t img_proyectois2 .
-    
+
+# Docker run
+    docker run -d -p 8000:8000 --name mi_contenedor img_proyectois2
