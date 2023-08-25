@@ -37,11 +37,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "login",
-    "administracion",
-    "roles",
-    "publicaciones",
-    "Kanban",
+    "apps.login",
+    "apps.administracion",
+    "apps.roles",
+    "apps.publicaciones",
+    "apps.Kanban",
 ]
 
 MIDDLEWARE = [
