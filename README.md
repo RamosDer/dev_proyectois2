@@ -7,18 +7,18 @@
 # Instalar DOCKER:
 sudo apt update
 
-    # Instalar las dependencias necesarias para agregar repositorios HTTPS
+    Instalar las dependencias necesarias para agregar repositorios HTTPS
         sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
 
-    # Agregar la clave GPG oficial de Docker
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+    Agregar la clave GPG oficial de Docker
+        curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-    # Agregar el repositorio de Docker al sistema.
-    echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    Agregar el repositorio de Docker al sistema.
+        echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-    # Instalar Docker.
-    sudo apt update
-    sudo apt install -y docker-ce docker-ce-cli containerd.io
+    Instalar Docker.
+        sudo apt update
+        sudo apt install -y docker-ce docker-ce-cli containerd.io
 
 # Crear un archivo DockerFile en el directorio raíz del proyecto
 
