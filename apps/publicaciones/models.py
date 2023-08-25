@@ -1,6 +1,6 @@
 from django.db import models
-from login.models import Usuario
-from administracion.models import Categoria
+from apps.login.models import Usuario
+from apps.administracion.models import Categoria
 from django.core.exceptions import ValidationError
 #from ckeditor.fields import RichTextField 
 #da error porque aun falta descargar archivos estaticos para que funcione

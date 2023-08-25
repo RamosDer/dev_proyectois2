@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
-from roles.models import Rol
+from apps.roles.models import Rol
 
 class Usuario(AbstractUser):
     roles = models.ManyToManyField(Rol, related_name='usuario')

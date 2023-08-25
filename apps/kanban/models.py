@@ -1,7 +1,7 @@
 #modelo provisorio, aun esta muy incompleto
 from django.db import models
-from publicaciones.models import Publicacion  # Importar el modelo Publicacion de la aplicación publicaciones
-from roles.models import Rol  # Importar el modelo Rol de la aplicación roles
+from apps.publicaciones.models import Publicacion  # Importar el modelo Publicacion de la aplicación publicaciones
+from apps.roles.models import Rol  # Importar el modelo Rol de la aplicación roles
 
 class Canvan(models.Model):
     ESTADOS_VISUALIZACION = [

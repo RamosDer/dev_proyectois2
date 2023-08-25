@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "apps.administracion",
     "apps.roles",
     "apps.publicaciones",
-    "apps.Kanban",
+    "apps.kanban",
 ]
 
 MIDDLEWARE = [
